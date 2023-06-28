@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color:#D94A38;width:120px;height:20px;padding:40px;
+        font-family: Serif;font-size: 20px;text-align: center;margin: auto;">
+        Click Me
+    </div>
+
+    <script>
+        let flag = 0;
+        function mDown(obj) {
+            obj.style.backgroundColor = "#1ec5e5";
+            obj.innerHTML = "Release Me";
+            obj.style.border = "solid";
+            obj.style.fontSize = "22px";
+            obj.style.fontFamily = "sans-serif";
+        }
+
+        async function mUp(obj) {
+            obj.style.backgroundColor = "#D94A38";
+            obj.innerHTML = "Thank You";
+            obj.style.border = "none";
+            obj.style.fontFamily = "Georgia";
+
+            await new Promise(r => setTimeout(r, 250));
+
+            obj.innerHTML = "Click Me";
+
+        }
+        
+    </script>
+
+</body>
+
+</html>
