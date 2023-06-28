@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events </title>
+</head>
+
+
+<script type="text/javascript">
+    function msg() {
+        var name = document.person.n1;
+        var usn = document.person.n2;
+        alert("Hello " + name.value + ", USN: " + usn.value);
+    }
+</script>
+
+<body>
+    <br><br>
+    <form name="person" style="text-align: center;">
+
+        Enter The name <br>
+        <input type="text" name="n1" style="text-align: center;"><br><br>
+
+        Enter The USN <br>
+        <input type="text" name="n2" style="text-align: center;"><br><br>
+
+        <input type="submit" onClick="msg();">
+
+    </form>
+</body>
+
+</html>
