@@ -15,16 +15,20 @@
         }
 
         p {
-            margin-bottom: 10px;
             text-align: center;
+            margin: auto;
+            margin-bottom: 15px;
         }
 
         #p1 {
-            color: #11ff11;
+            color: #045a04;
+            background-color: #9af59a;
         }
 
         #p2 {
-            color: #ec361e;
+            color: #9b0202;
+            /* background-color: #fca1a1; */
+            width: 340px;
         }
 
         .container {
@@ -58,11 +62,20 @@
     </div>
 
     <script>
+        const p1 = document.getElementById("p1");
+        const p2 = document.getElementById("p2");
+
         var message = document.getElementById('message');
         document.addEventListener('mousedown', function () {
+
+            p1.style.backgroundColor = "#fff";
+            p2.style.backgroundColor = "#fca1a1";
             message.style.display = 'block';
         });
         document.addEventListener('mouseup', function () {
+
+            p1.style.backgroundColor = "#9af59a";
+            p2.style.backgroundColor = "#fff";
             message.style.display = 'none';
         });
     </script>
