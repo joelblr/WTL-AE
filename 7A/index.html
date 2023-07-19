@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mouse Button Event</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #aba8af;
+        }
+
+        #h {
+            text-align: center;
+            color: #396bd6;
+        }
+
+        p {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        #p1 {
+            color: #11ff11;
+        }
+
+        #p2 {
+            color: #ec361e;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #message {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffd700;
+            color: #35b900;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="h">Mouse Button Event</h1>
+        <p id="p1">Press and hold the mouse button to show the message.</p>
+        <p id="p2">Release the mouse button to hide the message.</p>
+
+        <div id="message">Mouse button is pressed!</div>
+    </div>
+
+    <script>
+        var message = document.getElementById('message');
+        document.addEventListener('mousedown', function () {
+            message.style.display = 'block';
+        });
+        document.addEventListener('mouseup', function () {
+            message.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
