@@ -33,7 +33,7 @@ body {
     border-radius: 1000px;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
     border: 8px solid #c74385;
     box-shadow: 0 0 20px #00000033;
 }
