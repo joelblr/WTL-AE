@@ -8,8 +8,7 @@ const Button = ({ color, text, onClick }) => {
             className="btn"
             onClick={onClick}
         >
-            5
-            {text}
+            {{text}}
         </button>
     );
 };
