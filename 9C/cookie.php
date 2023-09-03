@@ -28,9 +28,6 @@ $lastVisitedDateTime = $_COOKIE['last_visited'] ?? 'Unknown';
             echo 'Welcome! This is your first visit.';
         }
         ?>
-
-        5
-
     </p>
 </body>
 
