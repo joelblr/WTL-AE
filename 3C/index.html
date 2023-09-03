@@ -14,7 +14,7 @@
     <script language="javascript">
         function capital() {
             var cunt = document.forms["frm1"].country.value;
-            var capital = "Please select any Country";
+            var capital;// = "Please select any Country";
 
             switch (cunt) {
                 case "INDIA" :  capital = "NEW DELHI";  break;
@@ -22,7 +22,7 @@
                 case "NETHERLANDS" :  capital = "AMSTERDAM";  break;
                 case "RUSSIA" :  capital = "MOSCOW";  break;
                 case "JAPAN" :  capital = "TOKYO";  break;
-                default : capital = "Please select any Country";  break;
+                default : capital = "Please select any Country";//  break;
             }
 
             document.getElementById("capt").innerHTML = capital;
