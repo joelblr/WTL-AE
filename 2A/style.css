@@ -1,17 +1,12 @@
-h1 {
-    font-family: serif;
+.h3 {
+    color: green;
     text-align: center;
 }
 
-p {
-    color: red;
+.p3 {
+    color: green;
     text-align: center;
     margin-left: 60px;
     margin-top: 60px;
     font-size: 40pt;
-}
-
-.blue {
-    color: blue;
-    text-align: center;
 }
