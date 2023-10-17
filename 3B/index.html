@@ -3,17 +3,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events </title>
 </head>
 
-
-<script type="text/javascript">
+<script>
     function msg() {
-        var name = document.person.n1;
-        var usn = document.person.n2;
-        alert("Hello " + name.value + ", USN: " + usn.value);
+        let name = document.person.n1.value;
+        let usn = document.person.n2.value;
+        alert("Hello " + name + ", USN: " + usn);
     }
 </script>
 
@@ -27,7 +24,7 @@
         Enter The USN <br>
         <input type="text" name="n2" style="text-align: center;"><br><br>
 
-        <input type="submit" onClick="msg();">
+        <input type="submit" onClick="msg()">
 
     </form>
 </body>
